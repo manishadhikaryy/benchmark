@@ -37,14 +37,11 @@ int main() {
             num = num2 / num1;
         }
     }
-
     
-
-
-    
-
-
-
+    clock_t final_time = clock();
+    time_taken += (double) (final_time - initial_time) / CLOCKS_PER_SEC;
+    // print final time 
+    printf("Time for the double operation is: %lf s", time_taken);
 
     return 0; 
 }
