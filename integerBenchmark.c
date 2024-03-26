@@ -11,6 +11,16 @@ int main{
     register int num;
     register int num1 = 2;
     register int num2 = 4;
+
+    double time_taken = 0.0;
+
+    // 10^10 additions (of integer constants)
+    for (int i=0; i < pow(10,5); i++) {
+        // (10^5) operations inside (10^5) operations give 10^10 operations
+        for(int j = 0; j < pow(10,5); j++) {
+            num = num1 + num2;
+        }
+    }
     
     
 }
