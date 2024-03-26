@@ -3,7 +3,7 @@
 #include <time.h> 
 #include <math.h>
 
-int main{
+int main() {
     // Initialize time
     clock_t initial_time = clock();
 
@@ -21,6 +21,20 @@ int main{
             num = num1 + num2;
         }
     }
+
+    // 5 * 10^9 multiplications (of integer constants)
+    for (int i=0; i < (5 * pow(10,4)); i++) {
+        // (10^5) operations inside 5 * (10^4) operations give  5 * 10^9 operations
+        for(int j = 0; j < pow(10,5); j++) {
+            num = num1 * num2;
+        }
+    }
+
+    
+
+    return 0;
+
+
     
     
 }
