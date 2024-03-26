@@ -38,17 +38,12 @@ int main() {
         }
     }
 
-    
+    clock_t final_time = clock();
+    time_taken += (double) (final_time - initial_time) / CLOCKS_PER_SEC;
+    // Print total time taken //
+    printf("Benchmark time for the integer operation is: %lf s", time_taken);
 
-
-
-
-
-    return 0;
-
-
-    
-    
+    return 0;    
 }
  
 
