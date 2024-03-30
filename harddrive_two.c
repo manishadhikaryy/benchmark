@@ -36,6 +36,6 @@ int main()
     clock_t final_time = clock();
     time_taken += (double)(final_time - initial_time) / CLOCKS_PER_SEC;
     // display final result
-    printf("Benchmark time for the harddrive2 operation is: %lf s", time_taken);
+    printf("Benchmark time for the harddrive_two operation is: %lf s", time_taken);
     return 0;
 }
