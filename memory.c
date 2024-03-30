@@ -11,4 +11,15 @@ int main()
     long size = 5 * pow(10,4);
     int nums[size];
 
+    // read from array
+    for(int i = 0; i < pow(10,5); i++){
+        for (int j = 0; j < size; j ++){
+            int num = nums[j];    
+        }
+    }
+
+    
+
+
+
 
