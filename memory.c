@@ -12,6 +12,13 @@ int main()
     int nums[size];
     int num; 
 
+     // write down on the array 
+    for(int i = 0; i < pow(10,5); i++){
+        for (int j = 0; j < size; j ++){
+            nums[j] = j;
+        }
+    }
+
     // read from array
     for(int i = 0; i < pow(10,5); i++){
         for (int j = 0; j < size; j ++){
@@ -19,12 +26,7 @@ int main()
         }
     }
 
-    // write down on the array 
-    for(int i = 0; i < pow(10,5); i++){
-        for (int j = 0; j < size; j ++){
-            nums[j] = j;
-        }
-    }
+   
 
     clock_t final_time = clock();
 
