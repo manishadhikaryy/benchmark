@@ -22,6 +22,15 @@ int main() {
     fp = fopen("file1.txt", "r");
 
     totalBytes = 0;
+    //read file 
+    while(totalBytes < pow(10, 9)) {
+        fgets(str, 100, fp);
+        fseek(fp, seekByte , SEEK_CUR);
+        totalBytes += seekByte;
+    }
+    fclose(fp);
+
+
 
     
 
