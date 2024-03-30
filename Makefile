@@ -16,3 +16,13 @@ run_harddrive_one: harddrive_one.c
 run_harddrive_two: harddrive_two.c
 	$(CC) $< -o harddrive_two
 	./harddrive_two
+
+run_integer_benchmark: integerBenchmark.c
+	$(CC) $< -o integerBenchmark
+	./integerBenchmark
+
+run_memory: memory.c
+	$(CC) $< -o memory
+	./memory
+
+clean:
