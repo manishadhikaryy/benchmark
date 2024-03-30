@@ -4,7 +4,7 @@
 #include <time.h>
  
 int main() {
-    clock_t initial time = clock();
+    clock_t initial_time = clock();
     double total_time_taken; 
 
     // write file
@@ -30,10 +30,10 @@ int main() {
     }
     fclose(fp);
 
-
-
-    
-
+    clock_t final_time = clock();
+    total_time_taken = += (double) (final_time - initial_time) / CLOCKS_PER_SEC;
+    // Print total time taken //
+    printf("Benchmark time for the integer operation is: %lf s", total_time_taken);
 
     return 0;
 }
