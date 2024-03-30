@@ -25,6 +25,18 @@ int main()
         }
     }
 
+    clock_t final_time = clock();
+
+    total_time += (double)(final_time - initial_time) / CLOCKS_PER_SEC
+
+    printf("Time for the memory operation is: %lf s", total_time)
+
+    return 0 
+
+}
+
+
+
 
 
 
