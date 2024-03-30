@@ -15,7 +15,13 @@ int main() {
     while (totalBytes < pow(10, 9)){
     fseek(fp, seekByte - 1, SEEK_CUR);
     fputc('\0', fp);
-    totalBytes += seekByte;
+    totalBytes += seekByte;}
+
+    fclose(fp);
+    char str[100];
+    fp = fopen("file1.txt", "r");
+
+    totalBytes = 0;
 
     
 
