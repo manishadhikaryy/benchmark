@@ -10,6 +10,13 @@ int main() {
     // write file
     int seekByte = 100;
     long long int totalBytes;
+
+    FILE *fp = fopen("file1.txt", "w");
+    while (totalBytes < pow(10, 9)){
+    fseek(fp, seekByte - 1, SEEK_CUR);
+    fputc('\0', fp);
+    totalBytes += seekByte;
+
     
 
 
