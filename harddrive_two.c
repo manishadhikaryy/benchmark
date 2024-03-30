@@ -23,7 +23,7 @@ int main()
 
     // read file every 10000 bytes
     char str[seekByte];
-    fp = fopen("file2.txt", "r");
+    fp = fopen("file2.txt"
     totalBytes = 0;
 
     // read from file2.txt every 10000 bytes
@@ -32,6 +32,11 @@ int main()
         fseek(fp, seekByte, SEEK_CUR);
         totalBytes += seekByte;
     }
+
+    clock_t final_time = clock()
+    time_taken += (double)(final_time - initial_time) / CLOCKS_PER_SEC;
+    // display final result
+    printf("Benchmark time for the harddrive2 operation is: %lf s", time_taken);
 
 
 
