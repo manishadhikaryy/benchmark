@@ -9,7 +9,7 @@ int main() {
 
     // write file
     int seekByte = 100;
-    long long int totalBytes;
+    long long int totalBytes = 0;
 
     FILE *fp = fopen("file1.txt", "w");
     while (totalBytes < pow(10, 9)){
