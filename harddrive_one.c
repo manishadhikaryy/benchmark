@@ -5,7 +5,7 @@
  
 int main() {
     clock_t initial_time = clock();
-    double total_time_taken; 
+    double total_time_taken = 0; 
 
     // write file
     int seekByte = 100;
