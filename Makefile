@@ -9,3 +9,10 @@ run_float_benchmark: floatBenchmark.c
 	$(CC) $< -o floatBenchmark
 	./floatBenchmark
 
+run_harddrive_one: harddrive_one.c
+	$(CC) $< -o harddrive_one
+	./harddrive_one
+
+run_harddrive_two: harddrive_two.c
+	$(CC) $< -o harddrive_two
+	./harddrive_two
