@@ -6,8 +6,6 @@ This is a benchmark program designed to evaluate the performance of various algo
 
 - GCC (GNU Compiler Collection) installed on your system.
 
-Certainly! Here's the updated section with bash syntax highlighted for each individual benchmark:
-
 ## How to Run
 
 1. Navigate to the project directory:
@@ -16,32 +14,17 @@ Certainly! Here's the updated section with bash syntax highlighted for each indi
 
     ```bash
     make run_float_benchmark
-    ```
-
-    ```bash
     make run_harddrive_one
-    ```
-
-    ```bash
     make run_harddrive_two
-    ```
-
-    ```bash
     make run_integer_benchmark
-    ```
-
-    ```bash
     make run_memory
     ```
 
-3. After running each benchmark, you can clean up the generated files using:
+3. After running the benchmarks, you can clean up the generated files using:
 
     ```bash
     make clean
     ```
-
-
-This update presents each individual benchmark with its own dedicated section and bash syntax highlighting for clarity.
 
 ### Alternatively Compiling and Running with gcc
 
