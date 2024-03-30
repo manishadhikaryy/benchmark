@@ -18,7 +18,15 @@ int main()
         }
     }
 
-    
+    // write down on the array 
+    for(int i = 0; i < pow(10,5); i++){
+        for (int j = 0; j < size; j ++){
+            nums[j] = j;
+        }
+    }
+
+
+
 
 
 
