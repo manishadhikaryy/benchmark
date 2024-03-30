@@ -21,6 +21,22 @@ int main()
     }
     fclose(fp);
 
+    // read file every 10000 bytes
+    char str[seekByte];
+    fp = fopen("file2.txt", "r");
+    totalBytes = 0;
+
+    // read from file2.txt every 10000 bytes
+    while(totalBytes < pow(10, 9)) {
+        fgets(str, seekByte, fp);
+        fseek(fp, seekByte, SEEK_CUR);
+        totalBytes += seekByte;
+    }
+
+
+
+
+
 
 
 
