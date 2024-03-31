@@ -8,19 +8,19 @@ int main()
     // get starting time
     clock_t initial_time = clock(); 
     double time_taken = 0.0;
-    long size = 5 * pow(10,4);
+    long size = 5 * 10000;
     int nums[size];
     int num; 
 
      // write down on the array 
-    for(int i = 0; i < pow(10,5); i++){
+    for(int i = 0; i < 100000; i++){
         for (int j = 0; j < size; j ++){
             nums[j] = j;
         }
     }
 
     // read from array
-    for(int i = 0; i < pow(10,5); i++){
+    for(int i = 0; i < 100000; i++){
         for (int j = 0; j < size; j ++){
              num = nums[j];    
         }

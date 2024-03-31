@@ -12,7 +12,7 @@ int main() {
     long long int totalBytes = 0;
 
     FILE *fp = fopen("file1.txt", "w");
-    while (totalBytes < pow(10, 9)){
+    while (totalBytes < 1000000000){
     fseek(fp, seekByte - 1, SEEK_CUR);
     fputc('\0', fp);
     totalBytes += seekByte;}
@@ -23,7 +23,7 @@ int main() {
 
     totalBytes = 0;
     //read file 
-    while(totalBytes < pow(10, 9)) {
+    while(totalBytes < 1000000000) {
         fgets(str, 100, fp);
         fseek(fp, seekByte , SEEK_CUR);
         totalBytes += seekByte;

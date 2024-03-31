@@ -14,7 +14,7 @@ int main()
     FILE *fp = fopen("file2.txt", "w");
 
    // write file into every 10000 bytes   
-    while (totalBytes < pow(10, 9)){
+    while (totalBytes < 1000000000){
         fseek(fp, seekByte - 1 , SEEK_CUR);
         fputc('\0', fp);
         totalBytes += seekByte;
@@ -27,7 +27,7 @@ int main()
     totalBytes = 0;
 
     // read from file2.txt every 10000 bytes
-    while(totalBytes < pow(10, 9)) {
+    while(totalBytes < 1000000000) {
         fgets(str, seekByte, fp);
         fseek(fp, seekByte, SEEK_CUR);
         totalBytes += seekByte;
